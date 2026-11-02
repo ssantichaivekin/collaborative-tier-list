@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env.local
+.convex/
+.env.*.local
+.DS_Store
+catalog-cache/
+
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+__pycache__/
+.venv/

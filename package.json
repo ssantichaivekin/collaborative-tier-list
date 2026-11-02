@@ -1,0 +1,36 @@
+{
+  "name": "multiplayer-tier-list",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "backend": "convex dev",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "deploy": "convex deploy --yes && static-hosting upload --build --prod"
+  },
+  "dependencies": {
+    "@convex-dev/static-hosting": "^0.2.1",
+    "convex": "^1.48.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "convex-test": "^0.0.66",
+    "prettier": "^3.9.10",
+    "typescript": "~5.9.3",
+    "vite": "^7.0.0",
+    "vitest": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "license": "MIT"
+}
